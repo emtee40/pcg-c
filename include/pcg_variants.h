@@ -862,8 +862,8 @@ inline void pcg_setseq_128_srandom_r(struct pcg_state_setseq_128* rng,
  *
  *     (Note that using modulo is only wise for good RNGs, poorer RNGs
  *     such as raw LCGs do better using a technique based on division.)
- *     Empricical tests show that division is preferable to modulus for
- *     reducting the range of an RNG.  It's faster, and sometimes it can
+ *     Empirical tests show that division is preferable to modulus for
+ *     reducing the range of an RNG.  It's faster, and sometimes it can
  *     even be statistically prefereable.
  */
 

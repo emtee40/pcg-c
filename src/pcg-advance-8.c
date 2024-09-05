@@ -24,7 +24,7 @@
  * has many additional features and is preferable if you can use C++ in
  * your project.
  *
- * Repetative C code is derived using C preprocessor metaprogramming
+ * Repetitive C code is derived using C preprocessor metaprogramming
  * techniques.
  */
 

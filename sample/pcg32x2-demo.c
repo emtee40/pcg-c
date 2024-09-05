@@ -74,7 +74,7 @@ void pcg32x2_advance_r(pcg32x2_random_t* rng, uint64_t delta)
     pcg32_advance_r(rng->gen + 1, delta);
 }
 
-/* See other definitons of ..._boundedrand_r for an explanation of this code. */
+/* See other definitions of ..._boundedrand_r for an explanation of this code. */
 
 uint64_t pcg32x2_boundedrand_r(pcg32x2_random_t* rng, uint64_t bound)
 {

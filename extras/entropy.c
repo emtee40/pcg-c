@@ -99,15 +99,15 @@ void fallback_entropy_getbytes(void* dest, size_t size)
     static PCG_SPINLOCK_DECLARE(mutex);
     PCG_SPINLOCK_LOCK(mutex);
 
-    static int intitialized = 0;
+    static int initialized = 0;
     static pcg32_random_t entropy_rng;
     
-    if (!intitialized) {
+    if (!initialized) {
         int dummyvar;
         pcg32_srandom_r(&entropy_rng,
                         time(NULL) ^ (intptr_t)&fallback_entropy_getbytes, 
                         (intptr_t)&dummyvar);
-        intitialized = 1;
+        initialized = 1;
     }
     
     char* dest_cp = (char*) dest;

@@ -145,7 +145,7 @@ else
     echo ''
     if diff -x "*-128-*" -x .gitignore -ru expected actual > /dev/null
     then
-        echo All tests except 128-bit tests succceed.
+        echo All tests except 128-bit tests succeed.
     else
         echo ERROR: Some tests failed.
     fi

@@ -25,7 +25,7 @@
  * your project.
  *
  * The contents of this file were mechanically derived from pcg_variants.h
- * (every inline function defined there gets an exern declaration here).
+ * (every inline function defined there gets an extern declaration here).
  */
 
 #include "pcg_variants.h"
